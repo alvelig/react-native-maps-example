@@ -15,7 +15,19 @@ export default class App extends Component<{}> {
     return (
       <MapView
         style={StyleSheet.absoluteFillObject}
-      />
+      >
+        <MapView.Marker
+          title="Greenwich"
+          coordinate={{
+            latitude: 51.48,
+            longitude: 0
+          }}
+          calloutOffset={{
+            x: -50,
+            y: -50
+          }}
+        />
+      </MapView>
     );
   }
 }
